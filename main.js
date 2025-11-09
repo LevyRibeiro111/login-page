@@ -1,49 +1,4 @@
-// function mostrarSenha() {
-//     let senhaInput = document.getElementById('senha')
-//     let btn = document.getElementById('btn-senha')
-//     if (senhaInput.type === 'password') {
-//         senhaInput.setAttribute('type', 'text')
-//         btn.classList.replace('bi-eye-fill', 'bi-eye-slash-fill')
-//     } else {
 
-//         senhaInput.setAttribute('type', 'password')
-//         btn.classList.replace('bi-eye-slash-fill', 'bi-eye-fill')
-
-//     }
-// }const senhaInput = document.getElementById('senha');
-// const btn = document.getElementById('btn-senha');
-
-// senhaInput.addEventListener('input', () => {
-//   if (senhaInput.value.length > 0) {
-//     btn.style.display = 'block';
-//   } else {
-//     btn.style.display = 'none';
-//     senhaInput.setAttribute('type', 'password');
-//     btn.classList.replace('bi-eye-slash-fill', 'bi-eye-fill');
-//   }
-// });
-// function mostrarSenha() {
-//     let senhaInput = document.getElementById('senha');
-//     let btn = document.getElementById('btn-senha');
-
-//     if (senhaInput.type === 'password') {
-//         senhaInput.type = 'text';
-//         btn.classList.replace('bi-eye-fill', 'bi-eye-slash-fill');
-//     } else {
-//         senhaInput.type = 'password';
-//         btn.classList.replace('bi-eye-slash-fill', 'bi-eye-fill');
-//     }
-// }
-
-// // Mostrar o olho só quando o usuário começar a digitar
-// document.getElementById('senha').addEventListener('input', function () {
-//     let btn = document.getElementById('btn-senha');
-//     if (this.value.length > 0) {
-//         btn.style.display = 'block';
-//     } else {
-//         btn.style.display = 'none';
-//     }
-// });
 function mostrarSenha() {
     let senhaInput = document.getElementById('senha');
     let btn = document.getElementById('btn-senha');

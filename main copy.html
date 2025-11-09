@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tela de Login</title>
+  <style>
+    /* ===== Estilos gerais ===== */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .container {
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 350px;
+      text-align: center;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
+      text-align: left;
+    }
+
+    label {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    input, select {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+      outline: none;
+    }
+
+    input:focus, select:focus {
+      border-color: #007bff;
+      box-shadow: 0 0 5px rgba(0,123,255,0.3);
+    }
+
+    .btn {
+      width: 100%;
+      padding: 12px;
+      background: #007bff;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #0056b3;
+    }
+
+    .theme-toggle {
+      margin-top: 15px;
+      background: transparent;
+      border: 1px solid #007bff;
+      color: #007bff;
+      padding: 8px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: all 0.3s;
+    }
+
+    .theme-toggle:hover {
+      background: #007bff;
+      color: #fff;
+    }
+
+    /* ===== Tema Escuro ===== */
+    body.dark {
+      background: #121212;
+      color: #f0f0f0;
+    }
+
+    body.dark .container {
+      background: #1e1e1e;
+      color: #f0f0f0;
+      box-shadow: 0 4px 12px rgba(255,255,255,0.05);
+    }
+
+    body.dark input,
+    body.dark select {
+      background: #2a2a2a;
+      border: 1px solid #444;
+      color: #f0f0f0;
+    }
+
+    body.dark input:focus,
+    body.dark select:focus {
+      border-color: #66aaff;
+      box-shadow: 0 0 5px rgba(102,170,255,0.5);
+    }
+
+    body.dark .btn {
+      background: #66aaff;
+      color: #000;
+    }
+
+    body.dark .btn:hover {
+      background: #3388dd;
+    }
+
+    body.dark .theme-toggle {
+      border-color: #66aaff;
+      color: #66aaff;
+    }
+
+    body.dark .theme-toggle:hover {
+      background: #66aaff;
+      color: #000;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Credenciais de Acesso</h2>
+
+    <div class="form-group">
+      <label for="login">Login</label>
+      <input type="text" id="login" placeholder="Digite seu login">
+    </div>
+
+    <div class="form-group">
+      <label for="senha">Senha</label>
+      <input type="password" id="senha" placeholder="Digite sua senha">
+    </div>
+
+    <div class="form-group">
+      <label for="posto">Posto de Atendimento</label>
+      <select id="posto">
+        <option value="">Selecione o posto de atendimento</option>
+        <option value="posto1">Posto 1</option>
+        <option value="posto2">Posto 2</option>
+        <option value="posto3">Posto 3</option>
+      </select>
+    </div>
+
+    <button class="btn">Entrar</button>
+    <button class="theme-toggle" onclick="toggleTheme()">Alternar Tema</button>
+  </div>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle("dark");
+    }
+  </script>
+</body>
+</html>
