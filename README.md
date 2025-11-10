@@ -18,4 +18,5 @@ Inclui ícone para mostrar/ocultar senha, validação básica e layout moderno.
 
 ## Como usar
 1. Baixe o projeto ou clone o repositório:
-2. Abra o arquivo `index.html` no navegador.
+2. https://github.com/LevyRibeiro111/login-page.git
+3. Abra o arquivo `index.html` no navegador.
